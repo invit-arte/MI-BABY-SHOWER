@@ -56,6 +56,17 @@
       crossorigin="anonymous"
     ></script>
 
+    <script>
+
+      document.addEventListener("click", function(){
+        const audio = document.getElementById("miaudio");
+        if (audio.paused) {
+          audio.play();
+        }
+      });
+
+    </script>
+
     <style>
       body,
       h1 {
@@ -137,7 +148,7 @@
     </style>
   </head>
   <body>
-    <audio autoplay loop>
+    <audio id="miaudio" autoplay loop>
       <source src="images/EnMiCorazonViviras.mp3" type="audio/mpeg">
       my baby s
     </audio>
